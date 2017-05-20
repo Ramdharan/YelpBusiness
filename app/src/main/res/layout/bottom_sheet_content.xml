@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:id="@+id/bottomSheetLayout"
+android:paddingLeft="5dp"
+    android:background="#FFFFFF"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bussiness_name"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <include layout="@layout/view_divder"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rating_header"
+            android:textStyle="bold"
+            android:textSize="@dimen/heading"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"
+            />
+
+        <RatingBar
+            android:id="@+id/business_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:numStars="5"
+            android:progress="@color/colorPrimary"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/address_header"
+        android:textStyle="bold"
+        android:textSize="@dimen/heading"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:layout_weight="0.3"/>
+    <TextView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/address_details"
+        android:layout_weight="0.7"
+        android:textSize="@dimen/description"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/btn_more_txt"
+        android:id="@+id/btn_more"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        />
+</LinearLayout>
+

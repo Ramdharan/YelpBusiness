@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">YelpBusiness</string>
+    <string name="google_api_key">AIzaSyDOs6am3k5W-2MFPBdHadpU_Xs_lk1389k</string>
+    <string name="rating_header">Rating:</string>
+    <string name="address_header">Address:</string>
+    <string name="btn_more_txt">More</string>
+    <string name="connection_failed">Cannot fetch location now, try restarting the app</string>
+    <string name="failed_request">Cannot fetch any near by details, try restarting the app</string>
+
+</resources>
