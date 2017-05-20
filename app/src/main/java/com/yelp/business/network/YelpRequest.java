@@ -16,9 +16,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/**
- * Created by ramdharandonda on 5/18/17.
- */
+
 
 public class YelpRequest implements Callback<SearchResponse> {
 
