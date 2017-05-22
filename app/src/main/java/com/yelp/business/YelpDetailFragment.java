@@ -21,11 +21,7 @@ public class YelpDetailFragment extends DialogFragment {
     private View mView;
     private Business mBusiness;
     private RecyclerView mRecyclerView;
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        //view is not coming
-    }
+   
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
